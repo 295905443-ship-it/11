@@ -1,15 +1,10 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { ItineraryRequest, GeneratedItinerary } from "../types";
 
-const apiKey = process.env.API_KEY || '';
-
-const ai = new GoogleGenAI({ apiKey });
+// Always use process.env.API_KEY as per guidelines
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const generateLuxuryItinerary = async (request: ItineraryRequest): Promise<GeneratedItinerary> => {
-  if (!apiKey) {
-    throw new Error("API Key is missing");
-  }
-
   const campingContext = request.includeCamping 
     ? "行程必须包含至少一晚的高端露营体验（推荐Snow Peak装备或富士山下豪华露营地）。" 
     : "行程以高端温泉旅馆或奢华酒店为主。";
