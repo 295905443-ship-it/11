@@ -31,7 +31,7 @@ const locations: Location[] = [
     name: 'Higashi-Izu',
     jpName: '東伊豆',
     description: '崎岖的海岸线与无尽的地平线。世界边缘的驾驶体验。',
-    image: 'https://images.unsplash.com/photo-1594953926084-3c6628b0561e?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1505440484611-23c171ad6e96?q=80&w=2070&auto=format&fit=crop',
     tags: ['海岸', '绝景']
   },
   {
@@ -39,7 +39,7 @@ const locations: Location[] = [
     name: 'Shuzenji',
     jpName: '修善寺',
     description: '伊豆的小京都。竹林小径与宁静的河流漫步。',
-    image: 'https://images.unsplash.com/photo-1528360983277-13d9b152c6d1?q=80&w=2065&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=2092&auto=format&fit=crop',
     tags: ['文化', '竹林']
   },
 ];
